@@ -1,0 +1,223 @@
+body {
+    background: #f0f8ff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    margin: 0;
+}
+
+/* ===== LAYOUT ===== */
+.page {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 720px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+}
+
+/* ===== TITULO ===== */
+.card h1 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* ===== FILTRO ===== */
+.filter-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ===== TABLA ===== */
+.movements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.movements-table thead {
+    background: #cfe8fc;
+}
+
+.movements-table th,
+.movements-table td {
+    padding: 14px;
+    text-align: left;
+}
+
+.movements-table th {
+    color: #3a79b8;
+    font-weight: 700;
+}
+
+.movements-table tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+.right {
+    text-align: right;
+}
+
+.positive {
+    color: #1aa84b;
+    font-weight: 700;
+}
+
+/* ===== BOTÓN ===== */
+.btn-volver {
+    display: block;
+    margin-top: 30px;
+    padding: 14px;
+    text-align: center;
+    background: #6c757d;
+    /* gris */
+    color: white;
+    /* letras blancas */
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 20px;
+    color: darkgreen;
+    /* ← CLAVE */
+}
+
+.logo svg {
+    stroke: currentColor;
+    /* ← usa el color del texto */
+}
+
+
+.menu-toggle {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: darkgreen;
+    /* ← CLAVE */
+}
+
+
+.logout-btn {
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.logout-btn:hover {
+    background-color: #0b5d0b;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ===== REDIRECCIÓN POPUP ===== */
+.redirect-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.redirect-box {
+    background-color: white;
+    padding: 24px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: darkgreen; /* TEXTO VERDE */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.redirect-box,
+.redirect-box p,
+.redirect-box strong {
+    color: darkgreen;
+}
+
+/* Menú hamburguesa */
+/* Menú hamburguesa */
+.hamburger-menu {
+    position: absolute;
+    top: 60px; /* justo debajo de la barra */
+    left: 0;
+    width: 220px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1500;
+}
+
+.hamburger-menu a {
+    padding: 10px 16px;
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.hamburger-menu a:last-child {
+    border-bottom: none;
+}
+
+.hamburger-menu a:hover {
+    background-color: #f0f8ff;
+}
+
+

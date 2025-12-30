@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú principal</title>
+    <link rel="stylesheet" href="/assets/css/menu.css">
+</head>
+
+<body data-page="menu">
+
+    <!-- BARRA SUPERIOR -->
+    <header class="top-bar">
+
+        <!-- IZQUIERDA: LOGO + HAMBURGUESA -->
+        <div class="left">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+               10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span>Alke</span><strong>Wallet</strong>
+            </div>
+
+            <!-- MENÚ HAMBURGUESA -->
+            <!-- MENÚ HAMBURGUESA -->
+            <nav class="hamburger-menu">
+                <a href="/assets/html/menu.html" data-redirect>Menú</a>
+                <a href="/assets/html/deposit.html" data-redirect>Depositar</a>
+                <a href="/assets/html/sendmoney.html" data-redirect>Enviar dinero</a>
+                <a href="/assets/html/transaction.html" data-redirect>Últimos movimientos</a>
+            </nav>
+
+
+        </div>
+
+        <!-- DERECHA: CERRAR SESIÓN -->
+        <button id="cerrarSesion" class="logout-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M10 17l1.41-1.41L8.83 13H20v-2H8.83
+                    l2.58-2.59L10 7l-5 5 5 5z" />
+            </svg>
+            Cerrar sesión
+        </button>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <main>
+        <div class="container">
+            <h2>Menú Principal</h2>
+
+            <div class="form-group">
+                <label>Dinero en cuenta:</label>
+                <h3 id="saldo">$600.000</h3>
+
+            </div>
+
+            <a href="/assets/html/deposit.html" class="button" data-redirect>
+                Depositar
+            </a>
+
+            <a href="/assets/html/sendmoney.html" class="button" data-redirect>
+                Enviar dinero
+            </a>
+
+            <a href="/assets/html/transaction.html" class="button" data-redirect>
+                Últimos Movimientos
+            </a>
+
+        </div>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

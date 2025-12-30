@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimos movimientos</title>
+    <link rel="stylesheet" href="/assets/css/transaction.css">
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <header class="top-bar">
+        <div class="left">
+            <!-- MENÚ HAMBURGUESA (PRIMERO) -->
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+            <!-- LOGO (DESPUÉS) -->
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10
+            10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+                <span>Alke</span><strong>Wallet</strong>
+            </div>
+
+            <!-- MENÚ HAMBURGUESA -->
+            <!-- MENÚ HAMBURGUESA -->
+            <nav class="hamburger-menu">
+                <a href="/assets/html/menu.html" data-redirect>Menú</a>
+                <a href="/assets/html/deposit.html" data-redirect>Depositar</a>
+                <a href="/assets/html/sendmoney.html" data-redirect>Enviar dinero</a>
+                <a href="/assets/html/transaction.html" data-redirect>Últimos movimientos</a>
+            </nav>
+
+
+
+        </div>
+
+
+        <button id="cerrarSesion" class="logout-btn">Cerrar sesión</button>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="page">
+        <section class="card">
+
+            <h1>Últimos Movimientos</h1>
+
+            <label class="filter-label">
+                Filtrar por:
+                <select>
+                    <option>Todos</option>
+                    <option>Depósitos</option>
+                    <option>Transferencias</option>
+                </select>
+            </label>
+
+            <table class="movements-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th class="right">Monto</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaMovimientos">
+                    <tr>
+                        <td>30/12/2025</td>
+                        <td> <strong>Depósito en cuenta</strong></td>
+                        <td class="right positive">+$200</td>
+                    </tr>
+                    <tr>
+                        <td>29/12/2025</td>
+                        <td> <strong>Depósito Inicial</strong></td>
+                        <td class="right positive">+$100.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="/assets/html/menu.html" class="btn-volver" data-redirect>
+                Volver al menú principal
+            </a>
+
+
+        </section>
+    </main>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
