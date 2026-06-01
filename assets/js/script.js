@@ -229,18 +229,7 @@ menuToggle.forEach(btn => {
             menu.style.display = menu.style.display === "flex" ? "none" : "flex";
         }
     });
-});
-
-// Cerrar menú al hacer click fuera
-document.addEventListener("click", (e) => {
-    const isMenuClick = e.target.closest(".top-bar");
-    const menus = document.querySelectorAll(".hamburger-menu");
-    menus.forEach(menu => {
-        if (!isMenuClick || !menu.contains(isMenuClick)) {
-            menu.style.display = "none";
-        }
-    });
-});
+})
 
 // ------------------------------
 // Menú hamburguesa
