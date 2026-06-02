@@ -217,20 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-
-
-// Toggle menú hamburguesa
-const menuToggle = document.querySelectorAll(".menu-toggle");
-menuToggle.forEach(btn => {
-    btn.addEventListener("click", () => {
-        const header = btn.closest(".top-bar");
-        const menu = header.querySelector(".hamburger-menu");
-        if (menu) {
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    });
-})
-
 // ------------------------------
 // Menú hamburguesa
 // ------------------------------
