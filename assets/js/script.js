@@ -220,7 +220,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // ------------------------------
 // Menú hamburguesa
 // ------------------------------
-    console.log("MENÚ HAMBURGUESA CARGADO");
 document.querySelectorAll(".menu-toggle").forEach(btn => {
     btn.addEventListener("click", (e) => {
         e.stopPropagation(); // evita que se cierre inmediatamente
